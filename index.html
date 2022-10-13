@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <style>
+        .cont{
+            display: grid;
+            gap: 10px;
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-rows: 1fr 1fr; */
+            grid-template-areas: 
+                "h h h h"
+                "t d d d"
+                "t d d d"
+                "f f f f";
+        }
+        .item{
+            padding: 15px;
+            border: 2px solid black;
+        }
+        .item-1{
+            grid-area: h;
+        }
+        .item-2{
+            grid-area: t;
+        }
+        .item-3{
+            grid-area: d;
+        }
+        .item-4{
+            grid-area: f;
+        }
+    </style>
+</head>
+    
+<body>
+    <div class="cont">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
